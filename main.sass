@@ -1,0 +1,709 @@
+
+@charset "utf-8"
+
+@import "sass/utilities/_all"
+@import "sass/base/_all"
+@import "sass/elements/_all"
+@import "sass/components/_all"
+@import "sass/grid/_all"
+@import "sass/layout/_all"
+
+.top
+	display: flex
+	justify-content: space-between
+	height: 2.5rem
+	position: relative
+	text-align: center
+	z-index: 10
+	background-color: $primary
+
+.top-left
+	white-space: nowrap
+	align-items: stretch
+	display: flex
+	flex-grow: 0
+	flex-shrink: 0
+	max-width: 100%
+	overflow: auto
+	color: white
+	.phone
+		color: white
+		font-size: 14px
+		display: flex
+		align-items: center
+		margin-right: 20px
+		.fa
+			margin-right: 10px
+			font-size: 14px
+	.email
+		color: white
+		font-size: 14px
+		display: flex
+		align-items: center
+		.fa
+			margin-right: 10px
+			font-size: 14px
+
+.top-center
+	align-items: stretch
+	display: flex
+	flex-grow: 1
+	flex-shrink: 0
+	margin-left: auto
+	margin-right: auto
+	.control
+		.input
+			border-radius: 40px
+			border: 0
+			width: 400px
+			height: 2rem
+			padding-bottom: 7px
+
+		.icon
+			height: 2rem
+			.fa
+				font-size: 14px
+
+
+
+.top-right
+	align-items: stretch
+	display: flex
+	flex-grow: 0
+	flex-shrink: 0
+	max-width: 100%
+	overflow: auto
+	.registro
+		color: white
+		width: 70px
+		justify-content: space-between
+
+	.login
+		color: white
+		width: 70px
+		justify-content: space-between
+		border: 2px solid
+		border-radius: 3px
+		margin-left: 10px
+	.redes
+	    border: 2px solid white
+	    color: white
+	    width: 25px
+	    height: 25px
+	    border-radius: 40px
+	    padding-top: 5px
+	    margin-left: 10px
+	    &:hover
+	    	background-color: white
+	    	color: $primary
+	    i
+	    	font-size: 12px
+
+.top-item
+	align-items: center
+	display: flex
+	flex-grow: 0
+	flex-shrink: 0
+	font-size: 1rem
+	justify-content: center
+	line-height: 1.5
+	padding: 0.5rem 0.75rem
+
+.nav
+	border-bottom: 1px solid $primary
+	height: 5rem
+	.nav-left
+		flex-basis: 80%
+	.nav-logo
+		display: flex
+		align-items: center
+		display: flex
+		flex-grow: 0
+		flex-shrink: 0
+		font-size: 1rem
+		justify-content: center
+		line-height: 1.5
+		padding: 0.5rem 0.75rem
+		.logo
+			width: 180px
+		img
+			max-height: 100%
+	 .nav-item
+		 font-weight: 500
+
+	.nav-right
+		flex-basis: 20%
+		overflow: inherit
+		.select
+			select
+				border: 0
+				color: #7a7a7a
+
+		.paises
+			position: relative
+
+		.items
+			position: absolute
+			bottom: -105px
+			right: 0
+			width: 200px
+			background-color: white
+			display: none
+			box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2)
+
+			li
+				&:last-child
+					border-bottom: 2px solid $primary
+				a
+				display: flex
+				justify-content: space-between
+				border-bottom: 1px solid #d1d1d1
+				padding: 5px
+				align-items: center
+				img
+					margin-right: 10px
+					height: 16px
+					width: 25px
+	a
+		&:hover
+			color: $primary
+		i.fa
+			margin-right: 10px
+			font-size: 14px
+			color: $primary
+
+.open
+	display: block !important
+
+.banner
+	background-image: url(/img/banner_3.jpeg)
+	background-position: center
+	background-repeat: no-repeat
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	&:after
+		background-color: rgba(0,0,0, 0.3)
+		width: 100%
+		height: 100%
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+	.container
+		z-index: 1
+	.title
+		font-size: 3rem
+		text-align: center
+		color: white
+		font-weight: 700
+		span
+			color: $danger
+			font-weight: 400
+
+	.subtitle
+	    text-align: center
+	    color: white
+
+	.travel
+		background-color: rgba(0, 0, 0, 0.42)
+		width: 100%
+		padding: 2em
+		margin-top: 50px
+
+		.tabs
+			li
+				margin-right: 5px
+				&:first-child a
+					border-radius: 0
+					border: 2px solid $primary
+				&:last-child a
+					border-radius: 0
+				a
+					color: white
+					border: 2px solid white
+					&:hover
+						background-color: $primary
+						border: 2px solid $primary
+
+		.form
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			.field
+
+			.label
+				color: white
+				font-weight: 300
+
+			.input
+				border: 2px solid white
+				background: transparent
+				border-radius: 0
+				color: white
+				&:focus ~
+					.icon
+						color: $primary
+			.icon
+				top: 32px
+				.fa
+					font-size: 18px
+
+			.button
+				width: 160px
+				border-radius: 0
+				margin-top: 32px
+
+			.select
+				width: 100%
+				select
+					border-radius: 0
+					width: 100%
+
+	#input_from,
+	#input_to
+		cursor: pointer
+
+
+.work
+	padding: 100px 0
+	&-title
+		font-size: 36px
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+		color: #333
+		span
+			font-weight: 300
+	&-subtitle
+			text-align: center
+			font-size: 22px
+			color: $grey
+			margin-bottom: 50px
+
+	.item
+		text-align: center
+		.icon
+			color: white
+			padding: 40px
+			border-radius: 50%
+			background-color: $danger
+			margin-bottom: 20px
+			position: relative
+			i
+				font-size: 28px
+				transition: all 1s
+				&:hover
+					color: white
+					transform: rotate3d(0,1,0,180deg)
+		h3
+			font-size: 22px
+			font-weight: 700
+			margin-bottom: 10px
+
+		p
+			color: grey
+
+.packages
+	.grid
+		display: flex
+		height: 600px
+		padding: 0px
+		&-column
+			width: 50%
+			height: 100%
+			display: flex
+			flex-wrap: wrap
+			&-inner
+				width: 50%
+				height: 50%
+
+			.description
+				text-align: center
+				padding: 20px
+				height: 100%
+				position: relative
+				border-top: 1px solid #d4d4d4
+				border-bottom: 1px solid #d4d4d4
+				h3
+					color: #333
+					font-size: 24px
+					margin-bottom: 10px
+				h4
+					color: #ff3860
+					margin-bottom: 10px
+
+				p
+					color: grey
+
+				.button
+					border-radius: 0
+					margin-top: 10px
+
+			.tooltip-right
+				&::after
+			    border-bottom: 15px solid transparent
+			    border-left: 15px solid #fff
+			    border-top: 15px solid transparent
+			    content: ""
+			    height: 0
+			    position: absolute
+			    right: -13px
+			    top: 43%
+			    width: 0
+			    z-index: 2
+			.tooltip-left
+				&::after
+				    border-bottom: 15px solid transparent
+				    border-left: 15px solid #fff
+				    border-top: 15px solid transparent
+				    content: ""
+				    height: 0
+				    position: absolute
+				    left: -13px
+				    top: 43%
+				    width: 0
+				    z-index: 2
+    				transform: rotate(180deg)
+
+			.thumb-inner
+				height: 100%
+				.image
+					height: 100%
+					position: relative
+					.detail
+							position: absolute
+							top: 0
+							left: 0
+							width: 100%
+							height: 100%
+							background-color: rgba(0, 209, 178, 0.41)
+							transform: scale(0)
+							transition: all .2s
+							a
+								width: 40px
+								height: 40px
+								position: absolute
+								top: 50%
+								left: 50%
+								color: white
+								i
+									font-size: 24px
+					&:hover
+						.detail
+							transform: scale(1)
+					img
+						height: 100%
+
+		.thumb
+			position: relative
+			&:hover
+				.overlay
+					transform: scale(1)
+				.hotel-detail
+					transform: scale(1)
+		.image
+			height: 100%
+			background-color: red
+			position: relative
+			img
+				height: 100%
+
+		.overlay
+			background-color: rgba(0, 209, 178, 0.41)
+			position: absolute
+			top: 0
+			right: 0
+			z-index: 2
+			width: 100%
+			height: 100%
+			transform: scale(0)
+			transition: all .2s
+
+		.hotel-detail
+			position: absolute
+			top: 35%
+			left: 30%
+			border: 2px solid white
+			z-index: 3
+			width: 300px
+			padding: 10px
+			transform: scale(0)
+			color: white
+			text-align: center
+			h3
+				font-size: 24px
+				margin-bottom: 10px
+			h4
+				color: #ff3860
+				margin-bottom: 10px
+
+			.button
+				border-radius: 0
+				margin-top: 10px
+
+.ofertas
+	padding: 100px 0
+	&-title
+		font-size: 36px
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+		color: #333
+		span
+			font-weight: 300
+	&-subtitle
+		text-align: center
+		font-size: 22px
+		color: $grey
+		margin-bottom: 50px
+	&-image
+		height: 250px
+		position: relative
+		overflow: hidden
+		img
+			height: 100%
+
+	&-description
+    position: absolute
+    top: 40%
+    left: 30px
+    color: white
+    display: flex
+    justify-content: space-between
+    width: 210px
+    padding: 20px
+    background-color: rgba(255, 56, 96, 0.76)
+
+	&-sale
+		background-color: rgba(0, 209, 178, 0.58)
+		position: absolute
+		top: 10px
+		right: -40px
+		padding: 10px
+		width: 138px
+		font-size: 13px
+		color: white
+		transform: rotate(45deg)
+		text-align: center
+
+
+	.button
+		margin: auto
+		display: block
+		width: 130px
+		margin-top: 30px
+		font-weight: 600
+		border-radius: 0
+
+.gallery
+	padding: 100px 0
+	&-title
+		font-size: 36px
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+		color: #333
+		span
+			font-weight: 300
+	&-subtitle
+		text-align: center
+		font-size: 22px
+		color: $grey
+		margin-bottom: 50px
+	.card
+		&:hover
+			box-shadow: 3px 5px 13px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+		.title
+			font-weight: 400
+		.card-image
+			.image
+				position: relative
+				height: 250px
+				img
+					height: 100%
+				.sale
+					background-color: $danger
+					position: absolute
+					top: 10px
+					left: 0
+					border-radius: 0 0 10px
+					text-align: center
+					color: white
+					padding: 5px
+					box-shadow: -2px 2px 5px rgba(0,0,0,0.3)
+				.group-icon
+					background-color: rgba(0, 0, 0, 0.4)
+					position: absolute
+					bottom: 0
+					right: 0
+					width: 70px
+					display: flex
+					justify-content: space-between
+					color: white
+					padding: 5px
+					.fa
+						&:hover
+							color: #EDDD10
+
+		.card-content
+			.content
+					color: grey
+
+		.read-more
+			width: 100%
+			display: flex
+			justify-content: space-between
+			border-top: 1px solid #d1d1d1
+			.comment
+				display: flex
+				align-items: center
+				color: #b3b2b2
+				padding: 0 20px
+				.fa
+					margin-right: 10px
+			a
+				height: 40px
+				display: block
+				background-color: #00d1b2
+				width: 150px
+				color: white
+				padding: 8px 19px
+				text-transform: uppercase
+				text-align: center
+				position: relative
+				&:hover
+					background-color: mix($primary, white, 90%)
+				&:after
+					position: absolute
+					top: 0
+					left: 0
+					content: ""
+					width: 10px
+					height: 10px
+					border-top: 20px solid transparent
+					border-left: 20px solid white
+					border-bottom: 20px solid transparent
+
+.footer
+	background-color: #333
+	padding-top: 50px
+	padding-bottom: 0
+	color: white
+	font-size: 14px
+	&_contacto
+		width: 33%
+		display: flex
+		flex-direction: column;
+		padding: 0.75rem
+		&_logo
+			width: 200px
+			height: auto
+			margin-bottom: 20px
+		&_info
+			li
+				margin: 10px 0
+				display: flex
+				align-items: center
+				i
+					margin-right: 10px
+					font-size: 16px
+		&_redes
+			display: flex
+			li
+				list-style: none
+				a
+				    background-color: $primary
+				    color: white
+				    width: 35px
+				    height: 35px
+				    border-radius: 40px
+				    padding-top: 9px
+				    margin-right: 10px
+				    margin-top: 10px
+				    display: block
+				    text-align: center
+				    transition: all .2s
+				    &:hover
+				    	background-color: white
+				    	color: $primary
+				    i
+				    	font-size: 16px					
+
+	&_menu
+		display: flex
+		flex-direction: column
+		width: 33%
+		padding: 0.75rem
+		h4
+			font-size: 18px
+			margin-bottom: 20px
+		li
+			list-style: none
+			margin-bottom: 10px
+			padding-left: 15px
+			a
+				color: white
+				display: flex
+				align-items: center
+				border-bottom: 1px solid rgba(181, 181, 181, 0.37)
+				width: 200px
+				padding-bottom: 5px
+				i 
+					margin-right: 10px
+					font-size: 14px
+	
+	&_instagram
+		display: flex
+		width: 33%
+		flex-direction: column
+		padding: 0.75rem
+		h4
+			font-size: 18px
+			margin-bottom: 20px
+
+		&_gallery
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+
+			li
+				list-style: none
+				margin-bottom: 20px
+				a
+					width: 100px
+					height: 100px
+					display: block
+					opacity: 0.5
+					transition: all .2s
+					color: white
+					img
+						max-width: 100%
+						height: 100%
+					&:hover
+						opacity: 1
+
+	&_copy
+		padding: 20px 0
+		border-top: 1px solid rgba(255, 255, 255, 0.18)
+
+.scrolltop
+	position: fixed
+	bottom: 8px
+	right: 20px
+	height: 40px
+	width: 40px
+	color: white
+	background-color: rgba(255, 56, 96, 0.4)
+	background-clip: padding-box
+	text-align: center
+	cursor: pointer
+	transition: all .5s ease-out
+	z-index: 999
+	padding-top: 7px
+	&:hover
+		background-color: $danger
+	i 
+		font-size: 24px

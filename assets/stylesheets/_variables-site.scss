@@ -1,0 +1,51 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//Colores Principales del Sitio
+
+$color-one:         #00D1B2; // Turquesa Flat
+$color-two:         #D33257; // Rojo Flat
+$color-three:       #FFDD57; // Amarillo Flat
+
+
+//== Botones
+//
+//Botones Principales del Sitio
+
+.btn {
+  color: $text-color;
+  border-radius: 0;
+}
+
+.btn-one {
+  background-color: $color-one;
+}
+
+.btn-two {
+  background-color: $color-two;
+  color: white !important;
+}
+
+.btn-three {
+  background-color: $color-three;
+}
+
+.btn-travel {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 0 !important;
+  &:active,
+  &:focus {
+    border: 2px solid $color-one;
+  }
+  &:hover {
+    background-color: $color-one !important;
+    border: 2px solid $color-one;
+    color: white;
+  }
+}

@@ -1,0 +1,43 @@
+// Resets
+
+a {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+    min-height: 65px;
+    margin-bottom: 0;
+}
+
+.navbar-header {
+  height: 65px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: $color-one;
+}
+
+.navbar-nav > li > a i{
+  color: $color-one;
+  margin-right: 0.5em;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: $color-one;
+}

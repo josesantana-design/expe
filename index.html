@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Experincias Bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/stylesheets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/stylesheets/css/main.css">
+</head>
+<body>
+
+	<header>
+		<!-- Header top -->
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="header-top-left">
+						<a href="#"><i class="fa fa-phone"></i>+514 02411542547</a>
+						<a href="#"><i class="fa fa-envelope-o"></i>plusultra@gmail.com</a>
+					</div>
+
+					<div class="header-top-right">
+						<div class="header-top-right-login">
+							<a href="#">Login</a>
+							<span>|</span>
+							<a href="#">Registro</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Header top -->
+
+		<!-- Header bottom -->
+		<div class="header-bottom">
+			<nav class="navbar navbar-default" role="navigation">
+
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="150"></a>
+			  </div>
+
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      <li><a href="#"><i class="fa fa-plane"></i>Vuelos</a></li>
+			      <li><a href="#"><i class="fa fa-bed"></i>Hoteles</a></li>
+			      <li><a href="#"><i class="fa fa-car"></i>Carros</a></li>
+			      <li><a href="#"><i class="fa fa-cube"></i>Paquetes</a></li>
+			      <li><a href="#"><i class="fa fa-shopping-bag"></i>Ofertas</a></li>
+			      <li><a href="#"><i class="fa fa-pencil"></i>Blog</a></li>
+			      <li><a href="#"><i class="fa fa-phone"></i>Contactanos</a></li>
+			    </ul>
+
+			    <ul class="nav navbar-nav navbar-right">
+			      <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Currency <b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">USD</a></li>
+			          <li><a href="#">BFS</a></li>
+			        </ul>
+			      </li>
+			    </ul>
+
+			  </div>
+			</nav>
+
+		</div>
+		<!-- End Header bottom -->
+
+	</header>
+
+	<!-- Banner -->
+	<section class="banner" style="background-image: url(./assets/images/banner_3.jpeg);">
+		<div class="container">
+			<h1 class="banner-title" data-aos="fade-up"><span>Vive</span> la Experiencia</h1>
+
+			<!-- Boton -->
+
+			<!-- Tabs -->
+			<div class="travel-button">
+				<ul  class="nav nav-pills">
+					<li class="active">
+		        <a  href="#vuelos" class="btn btn-travel" data-toggle="tab"><i class="fa fa-plane"></i>Vuelos</a>
+					</li>
+					<li>
+						<a href="#hoteles" class="btn btn-travel" data-toggle="tab"><i class="fa fa-bed"></i>Hoteles</a>
+					</li>
+					<li>
+						<a href="#carros" class="btn btn-travel" data-toggle="tab"><i class="fa fa-car"></i>Carros</a>
+					</li>
+				</ul>
+				<!-- Tabs Contenido-->
+				<div class="tab-content clearfix">
+					  <div class="tab-pane active" id="vuelos">
+
+							<form class="form-inline" role="form">
+								<div class="radio">
+									<label>
+										<input type="radio"> Ida y Vuelta
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio"> Solo Ida
+									</label>
+								</div>
+							  <div class="form-group">
+							    <label class="sr-only" for="ejemplo_email_2">Email</label>
+							    <input type="email" class="form-control" id="ejemplo_email_2"
+							           placeholder="Introduce tu email">
+							  </div>
+							  <div class="form-group">
+							    <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
+							    <input type="password" class="form-control" id="ejemplo_password_2"
+							           placeholder="Contraseña">
+							  </div>
+							  <button type="submit" class="btn btn-two">Entrar</button>
+								<div class="form-group">
+							    <label class="sr-only" for="ejemplo_email_2">Email</label>
+							    <input type="email" class="form-control" id="ejemplo_email_2"
+							           placeholder="Introduce tu email">
+							  </div>
+							  <div class="form-group">
+							    <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
+							    <input type="password" class="form-control" id="ejemplo_password_2"
+							           placeholder="Contraseña">
+							  </div>
+							  <div class="form-group">
+									<select class="selectpicker">
+									  <option>Economica</option>
+									  <option>Otra</option>
+									</select>
+							  </div>
+							</form>
+
+						</div>
+						<div class="tab-pane" id="hoteles">
+			      	<h3>Hoteles</h3>
+						</div>
+			      <div class="tab-pane" id="carros">
+			      	<h3>Carros</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner -->
+
+	<!--Como Trabajamos -->
+	<section class="work">
+		<div class="container">
+			<h2 class="section-title"><span>Nuestro</span> Trabajo</h2>
+			<h2 class="section-subtitle">Lorem ipsum dolor sit amet.</h2>
+			<div class="row">
+
+					<div class="work-item" data-aos="zoom-in">
+						<div class="work-item-icon"><i class="fa fa-search"></i></div>
+						<h3 class="work-item-title">Buscar</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+
+					<div class="work-item" data-aos="zoom-in">
+						<div class="work-item-icon"><i class="fa fa-heart"></i></div>
+						<h3 class="work-item-title">Seleccionar</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+
+					<div class="work-item" data-aos="zoom-in">
+						<div class="work-item-icon"><i class="fa fa-cart-plus"></i></div>
+						<h3 class="work-item-title">Comprar</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Como Trabajamos -->
+
+	<!-- Paquetes -->
+	<section class="packages">
+
+		<div class="packages-item" data-aos="fade-left">
+
+			<div class="packages-item-inner">
+				<div class="packages-description arrow-right">
+					<h3>Hotel Margarita</h3>
+					<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
+					<a href="#" class="btn btn-three">Comprar</a>
+				</div>
+			</div>
+
+			<div class="packages-item-inner">
+					<div class="packages-description-image">
+						<img src="assets/images/hotel_1.jpg" width="100%" height="236">
+						<div class="packages-description-image-overlay">
+							<a href="#"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+			</div>
+
+			<div class="packages-item-inner">
+					<div class="packages-description-image">
+						<img src="assets/images/hotel_2.jpg" width="100%" height="236">
+						<div class="packages-description-image-overlay">
+							<a href="#"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+			</div>
+
+			<div class="packages-item-inner">
+				<div class="packages-description arrow-left">
+					<h3>Hotel Caracas</h3>
+					<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
+					<a href="#" class="btn btn-three">Comprar</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="packages-item" data-aos="fade-right">
+			<div class="packages-image">
+				<img src="assets/images/hotel_3.jpg" width="100%" height="472">
+				<div class="packages-image-overlay">
+					<div class="details">
+						<h3>Hotel Curacao</h3>
+						<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
+						<a href="#" class="btn btn-three">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- End Paquetes -->
+
+	<!-- Ofertas -->
+	<section class="oferts">
+		<div class="container">
+				<div class="section-title"><span>Mejores</span> Ofertas</div>
+				<h2 class="section-subtitle">Lorem ipsum dolor sit amet.</h2>
+				<div class="row">
+
+					<div class="oferts-item">
+						<div class="oferts-item-image">
+							<img src="assets/images/ofertas_3.jpg" width="100%" height="240">
+							<div class="oferts-item-description">
+								<h3>Brasil</h3>
+								<p>$150.00</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="oferts-item">
+						<div class="oferts-item-image">
+							<img src="assets/images/ofertas_3.jpg" width="100%" height="240">
+							<div class="oferts-item-description">
+								<h3>Brasil</h3>
+								<p>$150.00</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="oferts-item">
+						<div class="oferts-item-image">
+							<img src="assets/images/ofertas_3.jpg" width="100%" height="240">
+							<div class="oferts-item-description">
+								<h3>Brasil</h3>
+								<p>$150.00</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="oferts-item">
+						<div class="oferts-item-image">
+							<img src="assets/images/ofertas_3.jpg" width="100%" height="240">
+							<span>Economica</span>
+							<div class="oferts-item-description">
+								<h3>Brasil</h3>
+								<p>$17.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="oferts-item-button">
+					<a href="#" class="btn btn-three">Ver mas</a>
+				</div>
+
+		</div>
+	</section>
+	<!--End Ofertas -->
+
+	<!-- Post -->
+	<section class="post">
+		<div class="container">
+			<div class="section-title"><span>Ultimos</span> Post</div>
+			<h2 class="section-subtitle">Lorem ipsum dolor sit amet.</h2>
+
+			<div class="row">
+
+				<div class="post-item" data-aos="fade-up" data-aos-duration="500">
+					<div class="post-card">
+						<div class="post-card-image">
+							<div class="post-card-image-inner">
+								<img src="assets/images/thumb.jpg" width="100%" height="210">
+								<h4>Reciente</h4>
+								<span>
+									<i class="fa fa-sun-o"></i>
+									<i class="fa fa-umbrella"></i>
+								</span>
+							</div>
+						</div>
+
+						<div class="post-card-content">
+							<h5>Venezuela</h5>
+							<h6>@PlusUltra</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.@plusultra.<span>#playa #venezuela</span></p>
+							<small>11:09 PM - 1 Jan 2016</small>
+						</div>
+						<div class="post-card-footer">
+							<ul>
+								<li><i class="fa fa-comment"></i>105</li>
+								<li><i class="fa fa-heart"></i>11</li>
+							</ul>
+							<a href="#">Leer Mas</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-item" data-aos="fade-up" data-aos-duration="1000">
+					<div class="post-card">
+						<div class="post-card-image">
+							<div class="post-card-image-inner">
+								<img src="assets/images/thumb_2.jpg" width="100%" height="210">
+								<h4>Reciente</h4>
+								<span>
+									<i class="fa fa-sun-o"></i>
+									<i class="fa fa-umbrella"></i>
+								</span>
+							</div>
+						</div>
+
+						<div class="post-card-content">
+							<h5>Venezuela</h5>
+							<h6>@PlusUltra</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.@plusultra.<span>#playa #venezuela</span></p>
+							<small>11:09 PM - 1 Jan 2016</small>
+						</div>
+						<div class="post-card-footer">
+							<ul>
+								<li><i class="fa fa-comment"></i>105</li>
+								<li><i class="fa fa-heart"></i>11</li>
+							</ul>
+							<a href="#">Leer Mas</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-item" data-aos="fade-up" data-aos-duration="1500">
+					<div class="post-card">
+						<div class="post-card-image">
+							<div class="post-card-image-inner">
+								<img src="assets/images/thumb_3.jpg" width="100%" height="210">
+								<h4>Reciente</h4>
+								<span>
+									<i class="fa fa-sun-o"></i>
+									<i class="fa fa-umbrella"></i>
+								</span>
+							</div>
+						</div>
+
+						<div class="post-card-content">
+							<h5>Venezuela</h5>
+							<h6>@PlusUltra</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.@plusultra.<span>#playa #venezuela</span></p>
+							<small>11:09 PM - 1 Jan 2016</small>
+						</div>
+						<div class="post-card-footer">
+							<ul>
+								<li><i class="fa fa-comment"></i>105</li>
+								<li><i class="fa fa-heart"></i>11</li>
+							</ul>
+							<a href="#">Leer Mas</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Post -->
+
+	<!-- Newsletter -->
+	<section class="newsletter">
+		<div class="container">
+			<div class="row">
+
+				<div class="newsletter-item">
+					<form action="" class="newsletter-form">
+						<input class="newsletter-form-input" type="text" placeholder="Ingrese tu Email">
+						<button class="newsletter-form-button"><i class="fa fa-paper-plane"></i>Suscribirse</button>
+					</form>
+				</div>
+
+				<div class="newsletter-item">
+					<div class="newsletter-redes">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-google"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Newsletter -->
+
+	<!-- ScrollTop -->
+	<div class="scrolltop">
+		<i class="fa fa-angle-up"></i>
+	</div>
+	<!--End ScrollTop -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="footer-item">
+					<div class="footer-contacto-logo">
+						<img src="assets/images/logo.png" width="150">
+					</div>
+					<ul class="footer-contacto-info">
+						<li><i class="fa fa-map-marker"></i>Valencia ctetueradipiscing elit, sed diam nonu my</li>
+						<li><i class="fa fa-phone"></i>+514 0241548548</li>
+						<li><i class="fa fa-envelope"></i>plusultra@plusultra.com</li>
+					</ul>
+
+					<div class="footer-contacto-redes">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</div>
+				</div>
+
+				<div class="footer-item">
+					<div class="footer-menu">
+						<h4>Mapa del Sitio</h4>
+						<li><a href="#"><i class="fa fa-angle-right"></i>Vuelos</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i>Hoteles</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i>Carros</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i>Paquetes</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i>Ofertas</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i>Blog</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i>Contactanos</a></li>
+					</div>
+				</div>
+
+				<div class="footer-item">
+					<div class="footer-gallery">
+						<h4>Instagram</h4>
+						<ul>
+							<li><a href="#"><img src="assets/images/hotel_1.jpg" width="100" height="100%"></a></li>
+							<li><a href="#"><img src="assets/images/hotel_2.jpg" width="100" height="100%"></a></li>
+							<li><a href="#"><img src="assets/images/hotel_3.jpg" width="100" height="100%"></a></li>
+							<li><a href="#"><img src="assets/images/hotel_2.jpg" width="100" height="100%"></a></li>
+							<li><a href="#"><img src="assets/images/hotel_3.jpg" width="100" height="100%"></a></li>
+							<li><a href="#"><img src="assets/images/hotel_1.jpg" width="100" height="100%"></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer-copy">
+				<p>© Copyright 2017 Plus Ultra. Todos los derechos reservados</p>
+			</div>
+		</div>
+	</footer>
+	<!--End Footer -->
+
+
+	<script src="assets/javascripts/jquery-2.2.4.min.js"></script>
+	<script src="assets/javascripts/bootstrap.min.js" charset="utf-8"></script>
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script src="assets/javascripts/bootstrap-select.min.js"></script>
+	<script src="assets/javascripts/script.js"></script>
+</body>
+</html>
