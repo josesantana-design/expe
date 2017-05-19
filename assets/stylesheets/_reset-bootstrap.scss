@@ -41,3 +41,46 @@ li {
     color: #fff;
     background-color: $color-one;
 }
+
+
+.select-group {
+  label {
+    margin-right: 1em;
+    font-weight: 400;
+  }
+}
+.btn-group.bootstrap-select {
+    width: 120px;
+}
+
+button.btn.dropdown-toggle.btn-default {
+  background: $color-one;
+  border: 0;
+  color: white;
+  &:active,
+  &:hover {
+    background: $color-one;
+    color: white;
+  }
+}
+
+.dropdown-menu {
+    min-width: 160px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    padding: 0;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li:focus {
+    outline: none;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a {
+    padding: 1em;
+    &:focus {
+      outline: none;
+    }
+}

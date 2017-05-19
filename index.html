@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Experincias Bootstrap</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="assets/stylesheets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/stylesheets/css/bootstrap-radio.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/stylesheets/css/main.css">
@@ -103,43 +104,58 @@
 					  <div class="tab-pane active" id="vuelos">
 
 							<form class="form-inline" role="form">
-								<div class="radio">
-									<label>
-										<input type="radio"> Ida y Vuelta
-									</label>
+								<div class="form-content">
+
+									<div class="radios-group">
+										<div class="radio radio-primary">
+					            <input type="radio" id="radio1">
+					            <label for="radio1">Ida y Vuelta</label>
+					        	</div>
+
+										<div class="radio radio-primary">
+											<input type="radio" id="radio2">
+											<label for="radio2">Solo Ida</label>
+										</div>
+
+									</div>
+
+									<div class="select-group">
+										<label for="">Clase</label>
+										<select class="selectpicker">
+											<option>Economica</option>
+											<option>Ejecutiva</option>
+										</select>
+									</div>
+
 								</div>
-								<div class="radio">
-									<label>
-										<input type="radio"> Solo Ida
-									</label>
+
+								<div class="form-content">
+
+								  <div class="form-group">
+								    <input type="text" class="form-control site-input" placeholder="Ciudad o Aeropuerto">
+										<span class="fa fa-arrow-up"></span>
+								  </div>
+
+								  <div class="form-group">
+								    <input type="text" class="form-control site-input" placeholder="Ciudad o Aeropuerto">
+										<span class="fa fa-arrow-down"></span>
+								  </div>
+
+								  <div class="form-group">
+								    <input type="text" class="form-control site-input" placeholder="Salida">
+										<span class="fa fa-calendar"></span>
+								  </div>
+
+								  <div class="form-group">
+								    <input type="text" class="form-control site-input" placeholder="Retorno">
+										<span class="fa fa-calendar"></span>
+								  </div>
+
+								  <button type="submit" class="btn btn-three"><i class="fa fa-user-plus"></i></button>
+
+								  <button type="submit" class="btn btn-two">Buscar</button>
+
 								</div>
-							  <div class="form-group">
-							    <label class="sr-only" for="ejemplo_email_2">Email</label>
-							    <input type="email" class="form-control" id="ejemplo_email_2"
-							           placeholder="Introduce tu email">
-							  </div>
-							  <div class="form-group">
-							    <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
-							    <input type="password" class="form-control" id="ejemplo_password_2"
-							           placeholder="Contraseña">
-							  </div>
-							  <button type="submit" class="btn btn-two">Entrar</button>
-								<div class="form-group">
-							    <label class="sr-only" for="ejemplo_email_2">Email</label>
-							    <input type="email" class="form-control" id="ejemplo_email_2"
-							           placeholder="Introduce tu email">
-							  </div>
-							  <div class="form-group">
-							    <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
-							    <input type="password" class="form-control" id="ejemplo_password_2"
-							           placeholder="Contraseña">
-							  </div>
-							  <div class="form-group">
-									<select class="selectpicker">
-									  <option>Economica</option>
-									  <option>Otra</option>
-									</select>
-							  </div>
 							</form>
 
 						</div>

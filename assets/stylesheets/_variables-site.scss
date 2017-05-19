@@ -32,6 +32,9 @@ $color-three:       #FFDD57; // Amarillo Flat
 
 .btn-three {
   background-color: $color-three;
+  i {
+    margin-right: 0 !important;
+  }
 }
 
 .btn-travel {
